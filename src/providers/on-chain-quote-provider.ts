@@ -4,9 +4,9 @@ import {
   encodeMixedRouteToPath,
   MixedRouteSDK,
   Protocol,
-} from '@uniswap/router-sdk';
-import { ChainId } from '@uniswap/sdk-core';
-import { encodeRouteToPath } from '@uniswap/v3-sdk';
+} from '@xlayerswap/router-sdk';
+import { ChainId } from '@xlayerswap/sdk-core';
+import { encodeRouteToPath } from '@xlayerswap/v3-sdk';
 import retry, { Options as RetryOptions } from 'async-retry';
 import _ from 'lodash';
 import stats from 'stats-lite';

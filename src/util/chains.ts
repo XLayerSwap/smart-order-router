@@ -4,7 +4,7 @@ import {
   Ether,
   NativeCurrency,
   Token,
-} from '@uniswap/sdk-core';
+} from '@xlayerswap/sdk-core';
 
 // WIP: Gnosis, Moonbeam
 export const SUPPORTED_CHAINS: ChainId[] = [
@@ -71,6 +71,10 @@ export const ID_TO_CHAIN_ID = (id: number): ChainId => {
       return ChainId.BNB;
     case 10:
       return ChainId.OPTIMISM;
+    case 195:
+      return ChainId.XLAYER_TESTNET;
+    case 196:
+      return ChainId.XLAYER;
     case 420:
       return ChainId.OPTIMISM_GOERLI;
     case 11155420:
@@ -141,6 +145,16 @@ export enum NativeCurrencyName {
 }
 
 export const NATIVE_NAMES_BY_ID: { [chainId: number]: string[] } = {
+  [ChainId.XLAYER]: [
+    'OKB',
+    'OKB',
+    '0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee',
+  ],
+  [ChainId.XLAYER_TESTNET]: [
+    'OKB',
+    'OKB',
+    '0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee',
+  ],
   [ChainId.MAINNET]: [
     'ETH',
     'ETHER',
@@ -328,6 +342,20 @@ export const ID_TO_PROVIDER = (id: ChainId): string => {
 };
 
 export const WRAPPED_NATIVE_CURRENCY: { [chainId in ChainId]: Token } = {
+  [ChainId.XLAYER]: new Token(
+    1,
+    '0xa2affd8301bfb3c5b815829f2f509f053556d21b',
+    18,
+    'WOKB',
+    'Wrapped OKB'
+  ),
+  [ChainId.XLAYER_TESTNET]: new Token(
+    1,
+    '0xe538905cf8410324e03A5A23C1c177a474D59b2b',
+    18,
+    'WOKB',
+    'Wrapped OKB'
+  ),
   [ChainId.MAINNET]: new Token(
     1,
     '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',

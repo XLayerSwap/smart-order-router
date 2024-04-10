@@ -1,6 +1,6 @@
-import { Protocol } from '@uniswap/router-sdk';
-import { ChainId, Token, TradeType } from '@uniswap/sdk-core';
-import { FeeAmount } from '@uniswap/v3-sdk';
+import { Protocol } from '@xlayerswap/router-sdk';
+import { ChainId, Token, TradeType } from '@xlayerswap/sdk-core';
+import { FeeAmount } from '@xlayerswap/v3-sdk';
 import _ from 'lodash';
 
 import {
