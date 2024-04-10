@@ -1,6 +1,6 @@
 {
   "name": "@xlayerswap/smart-order-router",
-  "version": "3.29.0",
+  "version": "3.29.1",
   "description": "XLayerSwap Smart Order Router",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
