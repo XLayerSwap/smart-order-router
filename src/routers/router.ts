@@ -12,7 +12,7 @@ import {
   Token,
   TradeType,
 } from '@xlayerswap/sdk-core';
-import { SwapOptions as UniversalRouterSwapOptions } from '@uniswap/universal-router-sdk';
+import { SwapOptions as UniversalRouterSwapOptions } from '@xlayerswap/universal-router-sdk';
 import { Route as V2RouteRaw } from '@xlayerswap/v2-sdk';
 import {
   MethodParameters as SDKMethodParameters,

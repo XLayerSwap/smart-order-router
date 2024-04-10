@@ -8,7 +8,7 @@ import { ChainId, Currency, TradeType } from '@xlayerswap/sdk-core';
 import {
   SwapRouter as UniversalRouter,
   UNIVERSAL_ROUTER_ADDRESS,
-} from '@uniswap/universal-router-sdk';
+} from '@xlayerswap/universal-router-sdk';
 import { Route as V2RouteRaw } from '@xlayerswap/v2-sdk';
 import { Route as V3RouteRaw } from '@xlayerswap/v3-sdk';
 import _ from 'lodash';

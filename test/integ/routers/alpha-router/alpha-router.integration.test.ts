@@ -19,7 +19,7 @@ import {
 import {
   PERMIT2_ADDRESS,
   UNIVERSAL_ROUTER_ADDRESS as UNIVERSAL_ROUTER_ADDRESS_BY_CHAIN
-} from '@uniswap/universal-router-sdk';
+} from '@xlayerswap/universal-router-sdk';
 import {
   Permit2Permit
 } from '@uniswap/universal-router-sdk/dist/utils/inputTokens';

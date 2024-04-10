@@ -72,6 +72,8 @@ type ChainTokenList = {
 };
 
 const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
+  [ChainId.XLAYER]: [WRAPPED_NATIVE_CURRENCY[ChainId.XLAYER]!],
+  [ChainId.XLAYER_TESTNET]: [WRAPPED_NATIVE_CURRENCY[ChainId.XLAYER_TESTNET]!],
   [ChainId.MAINNET]: [
     WRAPPED_NATIVE_CURRENCY[ChainId.MAINNET]!,
     DAI_MAINNET,
@@ -183,7 +185,7 @@ export class StaticV3SubgraphProvider implements IV3SubgraphProvider {
   constructor(
     private chainId: ChainId,
     private poolProvider: IV3PoolProvider
-  ) {}
+  ) { }
 
   public async getPools(
     tokenIn?: Token,

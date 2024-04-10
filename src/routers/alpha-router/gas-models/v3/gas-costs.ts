@@ -10,6 +10,8 @@ export const COST_PER_UNINIT_TICK = BigNumber.from(0);
 //l2 execution fee on optimism is roughly the same as mainnet
 export const BASE_SWAP_COST = (id: ChainId): BigNumber => {
   switch (id) {
+    case ChainId.XLAYER:
+    case ChainId.XLAYER_TESTNET:
     case ChainId.MAINNET:
     case ChainId.GOERLI:
     case ChainId.SEPOLIA:
@@ -46,6 +48,8 @@ export const BASE_SWAP_COST = (id: ChainId): BigNumber => {
 };
 export const COST_PER_INIT_TICK = (id: ChainId): BigNumber => {
   switch (id) {
+    case ChainId.XLAYER:
+    case ChainId.XLAYER_TESTNET:
     case ChainId.MAINNET:
     case ChainId.GOERLI:
     case ChainId.SEPOLIA:
@@ -81,6 +85,8 @@ export const COST_PER_INIT_TICK = (id: ChainId): BigNumber => {
 
 export const COST_PER_HOP = (id: ChainId): BigNumber => {
   switch (id) {
+    case ChainId.XLAYER:
+    case ChainId.XLAYER_TESTNET:
     case ChainId.MAINNET:
     case ChainId.GOERLI:
     case ChainId.SEPOLIA:

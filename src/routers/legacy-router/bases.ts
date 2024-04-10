@@ -28,6 +28,8 @@ export const BASES_TO_CHECK_TRADES_AGAINST = (
   _tokenProvider: ITokenProvider
 ): ChainTokenList => {
   return {
+    [ChainId.XLAYER]: [WRAPPED_NATIVE_CURRENCY[ChainId.XLAYER]!],
+    [ChainId.XLAYER_TESTNET]: [WRAPPED_NATIVE_CURRENCY[ChainId.XLAYER_TESTNET]!],
     [ChainId.MAINNET]: [
       WRAPPED_NATIVE_CURRENCY[ChainId.MAINNET]!,
       DAI_MAINNET,
